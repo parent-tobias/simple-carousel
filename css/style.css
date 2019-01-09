@@ -1,0 +1,43 @@
+
+#slideshow {
+	position: relative;
+	left: 16vw;
+	top: 10vw;
+	background-color: silver;
+	width: 65vw;
+	height: 35vw;
+}
+
+.slideshow-image {
+	width: inherit;
+	height: inherit;
+	animation: fade 1.5s;
+}
+
+@keyframes fade {
+	0% { opacity: 0.4; }
+
+	100% { opacity: 1; }
+}
+
+#previous, #next {
+	color: white;
+	text-align: center;
+	line-height: 6vw;
+	
+	position: absolute;
+	top: 40%;
+	
+	
+	width: 3vw;
+	height: 6vw;
+	background-color: black;
+	
+	opacity: 0.6;
+	z-index: 20;
+	cursor: pointer;	
+}
+
+#next {
+	right: 1px;
+}
